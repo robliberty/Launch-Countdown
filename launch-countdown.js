@@ -1,5 +1,5 @@
 $('body').append('<div id="launch_date">');
-$('#launch_date').css({'position':'fixed','bottom':'0','left':'0','padding':'.5em','background':'#FFEB3B','font-size':'12px','opacity':'.6','z-index':'9999','font-family':'Arial'});
+$('#launch_date').css({'user-select':'none','position':'fixed','bottom':'0','left':'0','padding':'.5em','background':'#FFEB3B','font-size':'12px','opacity':'.6','z-index':'9999','font-family':'Arial'});
 
 function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date());
