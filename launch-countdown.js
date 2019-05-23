@@ -18,6 +18,6 @@ function initializeClock(id, endtime) {
     updateClock();
     var timeinterval = setInterval(updateClock, 3600000);
 }
-
-var deadline = new Date(Date.parse(new Date("July 01,2019")) );
+var date = $('[data-launch]').data();
+var deadline = new Date(Date.parse(new Date(date)) );
 initializeClock('launch_date', deadline);
